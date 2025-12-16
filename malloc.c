@@ -1,0 +1,16 @@
+#include<stdlib.h>
+int main()
+{
+	int arr,n,i,sum=0;
+	printf(" enter number of elements:");
+	scanf("%d",&n);
+	arr=(int*) malloc(n*sizeof(int));
+	for(i=0; i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+		sum+=arr[i];
+	}
+	printf("sum is:%d",sum);
+	free(arr);
+	return 0; 
+}

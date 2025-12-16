@@ -1,0 +1,24 @@
+#include<stdio.h>
+int gcd(int a, int b)
+{
+	int i,g=1;
+	for(i=2;i<=a&&i<=b;i++)
+	{
+		if(a%i==0&&b%i==0)
+		g=i;
+		}
+	
+	return 0;
+}
+int lcm(int a,int b)
+{
+	return(a*b)/gcd(a,b);
+}
+int main()
+{
+	int a,b;
+	printf("enter a,b values");
+	scanf("%d%d",&a,&b);
+	printf("LCM of %d and %d ",a,b,Lcm(a,b));
+	return 0;
+	}
